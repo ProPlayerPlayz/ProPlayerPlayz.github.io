@@ -1,56 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Minecraft Server Login</title>
-  <style>
-    /* Add some basic styling */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    h1 {
-      text-align: center;
-    }
-    form {
-      max-width: 300px;
-      margin: 0 auto;
-    }
-    input[type="text"],
-    input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-    img {
-      display: block;
-      margin: 10px auto;
-    }
-    .button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      border: none;
-      cursor: pointer;
-    }
-    .button-secondary {
-      background-color: #ccc;
-    }
-  </style>
-</head>
-<body>
-  <h1>Minecraft Server Login</h1>
-  <form>
-    <input type="text" placeholder="Username" required>
-    <input type="password" placeholder="Password" required>
-    <img src="captcha.jpg" alt="Captcha">
-    <input type="text" placeholder="Enter Captcha" required>
-    <button class="button" type="submit">Login</button>
-  </form>
-  <p>Don't have an account? <a href="signup.html" class="button button-secondary">Sign up</a></p>
-</body>
+<html lang="en">
+  <head>
+    <title>Sign Up | By Code Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function signUp() {
+        // Perform signup logic here
+
+        // Display success message
+        alert('Sign up successful!');
+
+        // Redirect to the login page
+        window.location.href = 'LOGIN1.html';
+      }
+    </script>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>It's free and only takes a minute</h4>
+      <form>
+        <label>First Name</label>
+        <input type="text" placeholder="" />
+        <label>Last Name</label>
+        <input type="text" placeholder="" />
+        <label>Email</label>
+        <input type="email" placeholder="" />
+        <label>Password</label>
+        <input type="password" placeholder="" />
+        <label>Confirm Password</label>
+        <input type="password" placeholder="" />
+        <input type="button" value="Submit" onclick="signUp()" />
+      </form>
+      <p>
+        By clicking the Sign Up button, you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="LOGIN1.html">Login here</a>
+    </p>
+  </body>
 </html>
