@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Testing Webpage hosting</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="hosting a page on github using generator">
-		<meta name="keywords" content="generated page">
-		<style>
-			h1 {
-				font-family: Arial, sans-serif;
-				color: #2f2d2d;
-				text-align: default;
-			}
-			p {
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				text-align: default;
-				color: #2f2d2d;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>prop-pi Minecraft Server</h1>
-		<p>proplayerplayz was here</p>
-	</body>
+<head>
+  <title>Minecraft Server Login</title>
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    img {
+      display: block;
+      margin: 10px auto;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+    .button-secondary {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minecraft Server Login</h1>
+  <form>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <img src="captcha.jpg" alt="Captcha">
+    <input type="text" placeholder="Enter Captcha" required>
+    <button class="button" type="submit">Login</button>
+  </form>
+  <p>Don't have an account? <a href="signup.html" class="button button-secondary">Sign up</a></p>
+</body>
 </html>
